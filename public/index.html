@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Food Website</title>
   <link rel="stylesheet" href="/public/styles.css">
 </head>
 
-<body class="text-gray-600 font-mono">
-  <div>
+<body class="text-gray-600 font-body">
+  <div class="grid md:grid-cols-4">
     <!--content wrapper-->
     <div>
       <nav>
-        <div class="uppercase font-bold m-6 border-gray-100 border-b text-2xl">
-          <h1><a href="/">Food Website</a></h1>
+        <div class="uppercase font-bold m-6 border-gray-100 border-b text-xl">
+          <h1><a href="/" class="lg:text-2xl">Food Website</a></h1>
         </div>
         <ul class="font-semibold">
           <li>
@@ -30,10 +30,10 @@
       </nav>
     </div>
     <!--End nav-->
-    <main class="px-16 py-6 ">
-      <div>
-        <a href="#" class="text-primary">Log in</a>
-        <a href="#" class="text-primary">Sign up</a>
+    <main class="px-16 py-6 bg-gray-50 col-span-3">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="text-primary btn border-primary md:border-2">Log in</a>
+        <a href="#" class="text-primary btn border-primary md:border-2 ml-2">Sign up</a>
       </div>
       <header>
         <h2 class="text-6xl font-semibold py-5">Recipes</h2>
@@ -41,13 +41,36 @@
       </header>
       <div>
         <h4 class="text-lg border-b mt-16 font-bold">Latest Recipes</h4>
-        <div>
+        <div class=" mt-8 grid sm:grid-cols-3 gap-3">
           <!--Cards-->
-          <div class="mt-12 ">
-            <img src="/public/img/stew.jpg" alt="" />
-            <div>
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe By Mario</span>
+          <div class="card">
+            <img src="/public/img/stew.jpg" alt="" class="w-full h-24 sm:h-32 md:h-56 lg:h-64 object-cover" />
+            <div class="m-2">
+              <span class="font-bold">5 Bean Chilli Stew</span>
+              <span class="text-gray-500 text-sm block">Recipe By Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/public/img/curry.jpg" alt="" class="w-full h-24 sm:h-32 md:h-56 lg:h-64 object-cover" />
+            <div class="m-2">
+              <span class="font-bold">Hot Curry</span>
+              <span class="text-gray-500 text-sm block">Recipe By Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/public/img/noodles.jpg" alt="" class="w-full h-24 sm:h-32 md:h-56 lg:h-64 object-cover" />
+            <div class="m-2">
+              <span class="font-bold">Veg noodles</span>
+              <span class="text-gray-500 text-sm block">Recipe By Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 min</span>
             </div>
           </div>
         </div>
@@ -55,8 +78,8 @@
         <div class="mt-12 ">
           <!--Cards-->
         </div>
-        <div>
-          <div class="bg-secondary-100 text-secondary-200">Load More</div>
+        <div class="flex justify-center">
+          <div class="bg-secondary-100 btn text-secondary-200">Load More</div>
         </div>
       </div>
     </main>
