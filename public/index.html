@@ -9,12 +9,12 @@
 </head>
 
 <body class="text-gray-600 font-body">
-  <div class="grid md:grid-cols-3">
+  <div class="grid md:grid-cols-5">
     <!--content wrapper-->
-    <div class="md:flex md:justify-end md:col-span-1 col-span-3">
+    <div class="md:flex md:justify-end col-span-4 md:col-span-1">
       <nav class="md:text-right">
         <div class=" flex justify-between items-center">
-          <h1 class="uppercase font-bold m-6 border-gray-100 border-b text-xl hover:text-gray-800"><a href="/"
+          <h1 class="uppercase font-bold m-6 border-gray-100 border-b text-xl hover:text-gray-800"><a href="#"
               class="md:text-2xl">Food Website</a></h1>
           <div class="cursor-pointer md:hidden" id="menu-button">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -56,7 +56,7 @@
       </nav>
     </div>
     <!--End nav-->
-    <main class="px-16 py-6 bg-gray-50 col-span-2">
+    <main class="px-16 py-6 bg-gray-50 col-span-4">
       <div class="flex justify-center md:justify-end">
         <a href="#"
           class="text-primary btn border-primary hover:bg-primary hover:text-white transition ease-out duration-500 md:border-2">Log
@@ -71,7 +71,7 @@
       </header>
       <div>
         <h4 class="text-lg border-b mt-16 font-bold">Latest Recipes</h4>
-        <div class=" mt-8 grid sm:grid-cols-3 gap-3">
+        <div class=" mt-8 grid sm:grid-cols-3 gap-4">
           <!--Cards-->
           <div class="card">
             <img src="/public/img/stew.jpg" alt="" class="w-full h-24 sm:h-32 md:h-56 lg:h-64 object-cover" />
@@ -120,12 +120,26 @@
           </div>
         </div>
         <h4 class="text-lg border-b mt-16 font-bold">Most Popular</h4>
-        <div class="mt-12 ">
-          <!--Cards-->
+        <div class="grid sm:grid-cols-3 gap-4 mt-8">
+          <div class="card">
+            <img src="/public/img/curry.jpg" alt="" class="w-full h-24 sm:h-32 md:h-56 lg:h-64 object-cover" />
+            <div class="m-2">
+              <span class="font-bold">Hot Curry</span>
+              <span class="text-gray-500 text-sm block">Recipe By Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="w-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>30 min</span>
+            </div>
+          </div>
         </div>
         <div class="flex justify-center">
           <div
-            class="bg-secondary-100 btn text-secondary-200 hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-in-out duration-300">
+            class="bg-secondary-100 btn text-secondary-200 hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-in-out duration-300 mt-6">
             Load More
           </div>
         </div>

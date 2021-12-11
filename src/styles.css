@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .card {
-  @apply bg-white shadow-md overflow-hidden rounded-md relative hover:shadow-xl;
+  @apply bg-white shadow-md overflow-hidden rounded-md relative hover:shadow-xl transition  transform ease-out duration-500 hover:rotate-3;
 }
 
 .badge {
-  @apply rounded-full bg-secondary-100 text-xs text-black absolute top-0 ml-2 mt-2 uppercase p-2;
+  @apply rounded-full bg-white text-xs text-black absolute top-0 ml-2 mt-2 uppercase p-2;
 }
 
 .btn {
