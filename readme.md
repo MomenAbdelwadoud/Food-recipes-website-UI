@@ -7,7 +7,7 @@
 
 
 Dektop Version:
-![alt img](./screen shots/Desktop version.png>)
+![alt img](./screen shots/Desktop version.png)
 
 Mobile Version:
-![alt img](./screen shots/Mobile Version.png>)
+![alt img](./screen shots/Mobile Version.png)
